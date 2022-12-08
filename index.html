@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>日日是好日</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/public_header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/public_footer.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <!-- 头部样式 -->
+    <!-- <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css"> -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!--引用百度地图API-->
+    <script type="text/javascript"
+        src="https://api.map.baidu.com/api?v=2.0&ak=QOSB48ormFcQbksB3EmQbHbw6RH4aGwS"></script>
+    <script src="./js/date.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap">
+            <nav class="nav">
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list__item"><a href="./index.html">
+                                <i class="left_arrow">
+                                    <img src="./img/left_arrow.png" alt="">
+                                </i>Top Page
+                            </a></li>
+                        <li class="menu__list__item"><a href="./Almanac.html">Almanac</a></li>
+                        <li class="menu__list__item"><a href="./Holiday.html">Holiday</a></li>
+                        <li class="menu__list__item"><a href="./Note.html">Note</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section>
+                <div class="title">
+                    <a href="./index.html"><img src="./img/2.png" alt=""></a>
+                </div>
+                <div class="time">
+                    <div class="b_ri">
+                        <dl>
+                            <dt>
+                                <p id="demo"></p>
+                            </dt>
+                            <div class="real_time">
+                                <dd id="dd"></dd>
+                                <dd id="dd2"></dd>
+                            </div>
+                        </dl>
+
+                        <script>
+                            var d = new Date();
+                            document.getElementById("demo").innerHTML = d.toDateString();
+
+                            $('.time').click(() => { location.href = './Newday.html' })
+                        </script>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="list">
+            <div class="wrap clearfix icon_animate">
+                <dl class="icon_aos" data-aos="fade-right">
+                    <dt><img src="img/3.png" /></dt>
+                    <dd>1月</dd>
+                </dl>
+                <dl class="icon_aos" data-aos="fade-right">
+                    <dt><img src="img/4.png" /></dt>
+                    <dd>2月</dd>
+                </dl>
+                <dl class="icon_aos" data-aos="fade-right">
+                    <dt><img src="img/5.png" /></dt>
+                    <dd>3月</dd>
+                </dl>
+                <dl class="icon_aos" data-aos="fade-right">
+                    <dt><img src="img/6.png" /></dt>
+                    <dd>4月</dd>
+                </dl>
+                <dl class="icon_aos" data-aos="fade-right">
+                    <dt><img src="img/7.png" /></dt>
+                    <dd>5月</dd>
+                </dl>
+                <dl class="icon_aos" data-aos="fade-right">
+                    <dt><img src="img/8.png" /></dt>
+                    <dd>6月</dd>
+                </dl>
+                <dl class="icon_aos" data-aos="fade-right">
+                    <dt><img src="img/9.png" /></dt>
+                    <dd>7月</dd>
+                </dl>
+                <dl class="icon_aos" data-aos="fade-right">
+                    <dt><img src="img/10.png" /></dt>
+                    <dd>8月</dd>
+                </dl>
+                <dl class="icon_aos" data-aos="fade-right">
+                    <dt><img src="img/11.png" /></dt>
+                    <dd>9月</dd>
+                </dl>
+                <dl class="icon_aos" data-aos="fade-right">
+                    <dt><img src="img/12.png" /></dt>
+                    <dd>10月</dd>
+                </dl>
+                <dl class="icon_aos" data-aos="fade-right">
+                    <dt><img src="img/13.png" /></dt>
+                    <dd>11月</dd>
+                </dl>
+                <dl class="icon_aos" data-aos="fade-right">
+                    <dt><img src="img/14.png" /></dt>
+                    <dd>12月</dd>
+                </dl>
+            </div>
+
+        </div>
+        <div class="line">
+            <div class="wrap">
+                <img src="img/line.jpg" />
+            </div>
+        </div>
+        <div class="main sign">
+            <div class="wrap">
+                <h4 id="wr4">一日一籤
+                    <a href="#"><img class="star_icon" src="img/star.png" /></a>
+                </h4>
+                <div class="main_list">
+                    <div class="mian_back">
+
+                        <p class="list_p">
+                            今日は何の日ですか
+                        </p>
+                        <!-- <div class="arrow">
+                            <i><img width="30" src="./img/t_c.png" alt=""></i>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <!-- 页面滚动状态 start -->
+        <div class="scroll_state">
+            <div class="scroll_down" id="scroll_down">
+                <a href="#"><img src="./img/arrow.png" alt=""></a>
+            </div>
+            <div class="scroll_up" id="scroll_up">
+                <a href="#"><img src="./img/arrow.png" alt=""></a>
+            </div>
+        </div>
+        <!-- 页面滚动状态 end -->
+
+        <!-- <div class="yright">
+            <a href="#Holiday"><img src="img/top.jpg" /></a>
+            <a href="#map"><img src="img/down.jpg" /></a>
+        </div> -->
+        <!--漂浮进来效果-->
+        <link rel="stylesheet" type="text/css" href="css/aos.css" />
+        <script type="text/javascript" src="js/aos.js"></script>
+        <script>
+            $('.icon_aos').each(function (index, el) {
+                var speed = 400
+
+                $(el).attr('data-aos-delay', index * speed)
+
+            })
+
+            AOS.init({
+                easing: 'ease',
+                duration: 1000,
+                offset: -500,
+                once: true,
+                anchorPlacement: "bottom-bottom"
+            });
+        </script>
+    </main>
+    <div class="end">
+        <!-- <p>EVERY DAY IS A GOOD DAY</p> -->
+        <p>NOW IS THE REAI BEGINNG</p>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="ft__menu">
+                <ul class="ft__menu__list">
+                    <li class="menu__list__item">
+                        <a href="./index.html">
+                            <i class="left_arrow">
+                                <img src="./img/left_arrow.png" alt="">
+                            </i>Top Page
+                        </a>
+                    </li>
+                    <li class="menu__list__item"><a href="./Almanac.html">Almanac</a></li>
+                    <li class="menu__list__item"><a href="./Holiday.html">Holiday</a></li>
+                    <li class="menu__list__item"><a href="./Note.html">Note</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="ft__tip">
+            <span>*季節の歲時記は過去30年間の平均です</span>
+            <span>情報提供：一般財団法人 日本気象協会</span>
+        </div> -->
+    </footer>
+    <script src="./js/scrollState.js"></script>
+    <!-- 
+    <script src="./js/calerdarData.js"></script>
+    <script src="./js/calendar.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/new.js"></script> -->
+</body>
+
+</html>

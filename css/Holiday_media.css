@@ -1,0 +1,156 @@
+@media screen and (max-width: 1720px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+  section .time {
+    font-size: 1.8vw;
+  }
+
+  section .Holiday p {
+    font-size: 2rem;
+  }
+
+
+}
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  table {
+    padding: 0;
+  }
+
+  section .title {
+    width: 70%;
+  }
+
+  section .Holiday{
+    display: none;
+  }
+
+  section .time {
+    font-size: 2vw;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .main .container {
+    padding: .42rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    /* background-image: url("../img/mbg.png"); */
+  }
+
+  .dayIntroduced__left .dayIntroduced__list__item span {
+    width: 13rem;
+  }
+
+  .dayIntroduced__right .dayIntroduced__list__item span {
+    width: auto;
+  }
+
+  .dayIntroduced__right {
+    margin-left: 0;
+    text-align: right;
+  }
+
+  .calendar {
+    width: 100%;
+    margin-right: 0;
+    padding: .5rem;
+    margin: 2rem 0;
+  }
+
+  section .time .time__month .time__month--info {
+    margin-top: .83rem;
+  }
+
+  section .time .time__month {
+    position: absolute;
+    left: 50%;
+    top: 18rem;
+    margin-left: 0;
+    font-size: 0.73rem;
+    transform: translateX(-50%);
+  }
+
+  section .time .time__month .time__bg {
+    width: 7.3rem;
+    right: 50%;
+    top: -50%;
+    /* bottom: 50%; */
+    right: auto;
+    height: 7.3rem;
+    margin-left: 3.65rem;
+    /* transform: translate(50%, 50%); */
+  }
+
+  .tl-toubu p {
+    font-size: 1.5rem;
+  }
+
+  .ri-toubu-right img {
+    width: 1.5rem;
+  }
+
+  section .time .time__current .time__current--hs {
+    margin-top: 1rem;
+  }
+
+  .tl-toubu .ri-toubu-right div span {
+    font-size: 1rem;
+  }
+
+  .end {
+    font-size: 1rem;
+  }
+
+  .ft__menu {
+    transform: scale(.8);
+  }
+
+  .footer {
+    padding-bottom: 0;
+  }
+
+  .footer .ft__menu__list .menu__list__item+.menu__list__item {
+    margin-left: 1.25rem;
+  }
+
+  .ft__tip {
+    transform: scale(.7) translateX(-6rem);
+  }
+
+  .ft__tip span:last-child {
+    display: block;
+    width: fit-content;
+    transform: translate(18rem, -1.4rem);
+  }
+
+  .content .main_l, .content .main_r {
+    width: 29px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .time__current {
+    display: none;
+  }
+
+
+}

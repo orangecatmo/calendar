@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>日日是好日 Holiday</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/public_header.css">
+    <link rel="stylesheet" href="./css/Holiday_index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/Holiday_media.css">
+    <link rel="stylesheet" href="./css/Holiday_animation.css">
+    <script src="./js/jquery.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap">
+            <nav class="nav">
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list__item"><a href="./index.html">
+                                <i class="left_arrow">
+                                    <img src="./img/left_arrow.png" alt="">
+                                </i>Top Page
+                            </a></li>
+                        <li class="menu__list__item"><a href="./Almanac.html">Almanac</a></li>
+                        <li class="menu__list__item"><a href="./Holiday.html">Holiday</a></li>
+                        <li class="menu__list__item"><a href="./Note.html">Other</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section>
+                <div class="title">
+                    <a href="./index.html"><img src="./img/2.png" alt=""></a>
+                </div>
+                <div class="time">
+                    <div class="b_ri">
+                        <dl>
+                            <dt>
+                                <p id="demo"></p>
+                            </dt>
+                            <div class="real_time">
+                                <dd id="dd"></dd>
+                                <dd id="dd2"></dd>
+                            </div>
+                        </dl>
+
+                        <script>
+                            var d = new Date();
+                            document.getElementById("demo").innerHTML = d.toDateString();
+
+                            $('.time').click(() => { location.href = './Newday.html' })
+                        </script>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="content" id="content">
+            <div class="main_l">
+               <img src="./img/left_more_arrow.png" alt="">
+            </div>
+            <div class="main_idea">
+                <div class="main_txt">
+                    <div>
+                        <p> 元日 </p>
+                        <p>
+                            1月1日（土）
+                        </p>
+                    </div>
+                    <div>
+                        <p>成人の日</p>
+                        <p>1月10日（月）</p>
+                    </div>
+                </div>
+                <img src="./img/P-11.png" alt="">
+            </div>
+            <div class="main_r">
+                <img src="./img/right_more_arrow.png" alt="">
+            </div>
+        </div>
+    </main>
+    <div class="end">
+        <p>NOW IS THE REAI BEGINNG</p>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="ft__menu">
+                <ul class="ft__menu__list">
+                    <li class="menu__list__item">
+                        <a href="./index.html">
+                            <i class="left_arrow">
+                                <img src="./img/left_arrow.png" alt="">
+                            </i>About Calendar
+                        </a>
+                    </li>
+                    <li class="menu__list__item"><a href="./Almanac.html">Almanac</a></li>
+                    <li class="menu__list__item"><a href="./Holiday.html">Holiday</a></li>
+                    <li class="menu__list__item"><a href="./Note.html">Other</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="ft__tip">
+            <span>*季節の歲時記は過去30年間の平均です</span>
+            <span>情報提供：一般財団法人 日本気象協会</span>
+        </div> -->
+    </footer>
+
+    <script src="./js/Holiday_calerdarData.js"></script>
+    <script src="./js/Holiday_calendar.js"></script>
+    <script src="./js/Holiday_index.js"></script>
+    <script src="./js/Holiday_new.js"></script>
+
+</body>
+
+</html>

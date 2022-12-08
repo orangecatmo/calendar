@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Note</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="./css/public.css">
+  <link rel="stylesheet" href="./css/public_header.css">
+  <link rel="stylesheet" href="./css/public_footer.css">
+  <link rel="stylesheet" href="./css/note_style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/note_media.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrap">
+      <nav class="nav">
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__list__item"><a href="./index.html">
+                <i class="left_arrow">
+                  <img src="./img/left_arrow.png" alt="">
+                </i>Top Page
+              </a></li>
+            <li class="menu__list__item"><a href="./Almanac.html">Almanac</a></li>
+            <li class="menu__list__item"><a href="./Holiday.html">Holiday</a></li>
+            <li class="menu__list__item"><a href="./Note.html">Note</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section>
+        <div class="title">
+          <a href="./index.html"><img src="./img/2.png" alt=""></a>
+        </div>
+        <div class="time">
+          <div class="b_ri">
+            <dl>
+              <dt>
+                <p id="demo"></p>
+              </dt>
+              <div class="real_time">
+                <dd id="dd"></dd>
+                <dd id="dd2"></dd>
+              </div>
+            </dl>
+
+            <script>
+
+              document.querySelector('.time').addEventListener('click', () => { location.href = './Newday.html' })
+
+              var d = new Date();
+              document.getElementById("demo").innerHTML = d.toDateString();
+            </script>
+          </div>
+        </div>
+    </div>
+    </section>
+    </div>
+  </header>
+  <main class="main">
+    <div class="note wrap">
+      <div class="note_top">
+        <div class="note_title note_item_y">
+          <div class="title">
+            <span>生活を記録しましょう</span>
+          </div>
+        </div>
+        <div class="note_option">
+          <div class="note_item ">
+            <a href="#one_month" class="note_item_y">1月~3月</a>
+          </div>
+          <div class="note_item">
+            <a href="#four_month" class="note_item_y">4月~6月</a>
+          </div>
+          <div class="note_item">
+            <a href="#seven_month" class="note_item_y">7月~9月</a>
+          </div>
+          <div class="note_item">
+            <a href="#ten_month" class="note_item_y">10月~12月</a>
+          </div>
+        </div>
+      </div>
+      <div class="note_record">
+        <div class="record_item" id="one_month">
+          <div class="record_month">
+            <div class="t_month">
+              <span>1月</span>
+            </div>
+            <div class="month_icon">
+              <img src="./img/3.png" alt="">
+            </div>
+          </div>
+          <div class="record_content">
+            <div class="content">
+              <textarea class="record_text" name="" placeholder="说点什么吧" id=""></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="record_item" id="two_month">
+          <div class="record_month">
+            <div class="t_month">
+              <span>2月</span>
+            </div>
+            <div class="month_icon">
+              <img src="./img/4.png" alt="">
+            </div>
+          </div>
+          <div class="record_content">
+            <div class="content">
+              <textarea class="record_text" name="" placeholder="说点什么吧"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="record_item" id="three_month">
+          <div class="record_month">
+            <div class="t_month">
+              <span>3月</span>
+            </div>
+            <div class="month_icon">
+              <img src="./img/5.png" alt="">
+            </div>
+          </div>
+          <div class="record_content">
+            <div class="content">
+              <textarea class="record_text" name="" placeholder="说点什么吧"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="record_item" id="four_month">
+          <div class="record_month">
+            <div class="t_month">
+              <span>4月</span>
+            </div>
+            <div class="month_icon">
+              <img src="./img/6.png" alt="">
+            </div>
+          </div>
+          <div class="record_content">
+            <div class="content">
+              <textarea class="record_text" name="" placeholder="说点什么吧"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="record_item" id="five_month">
+          <div class="record_month">
+            <div class="t_month">
+              <span>5月</span>
+            </div>
+            <div class="month_icon">
+              <img src="./img/7.png" alt="">
+            </div>
+          </div>
+          <div class="record_content">
+            <div class="content">
+              <textarea class="record_text" name="" placeholder="说点什么吧"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="record_item" id="six_month">
+          <div class="record_month">
+            <div class="t_month">
+              <span>6月</span>
+            </div>
+            <div class="month_icon">
+              <img src="./img/8.png" alt="">
+            </div>
+          </div>
+          <div class="record_content">
+            <div class="content">
+              <textarea class="record_text" name="" placeholder="说点什么吧"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="record_item" id="seven_month">
+          <div class="record_month">
+            <div class="t_month">
+              <span>7月</span>
+            </div>
+            <div class="month_icon">
+              <img src="./img/9.png" alt="">
+            </div>
+
+            <div class="note_option">
+              <div class="note_item ">
+                <a href="#one_month" class="note_item_y">1月~3月</a>
+              </div>
+              <div class="note_item">
+                <a href="#four_month" class="note_item_y">4月~6月</a>
+              </div>
+              <div class="note_item">
+                <a href="#seven_month" class="note_item_y">7月~9月</a>
+              </div>
+              <div class="note_item">
+                <a href="#ten_month" class="note_item_y">10月~12月</a>
+              </div>
+            </div>
+          </div>
+          <div class="record_content">
+            <div class="content">
+              <textarea class="record_text" name="" placeholder="说点什么吧"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="record_item" id="eight_month">
+          <div class="record_month">
+            <div class="t_month">
+              <span>8月</span>
+            </div>
+            <div class="month_icon">
+              <img src="./img/10.png" alt="">
+            </div>
+          </div>
+          <div class="record_content">
+            <div class="content">
+              <textarea class="record_text" name="" placeholder="说点什么吧"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="record_item" id="nine_month">
+          <div class="record_month">
+            <div class="t_month">
+              <span>9月</span>
+            </div>
+            <div class="month_icon">
+              <img src="./img/11.png" alt="">
+            </div>
+          </div>
+          <div class="record_content">
+            <div class="content">
+              <textarea class="record_text" name="" placeholder="说点什么吧"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="record_item" id="ten_month">
+          <div class="record_month">
+            <div class="t_month">
+              <span>10月</span>
+            </div>
+            <div class="month_icon">
+              <img src="./img/12.png" alt="">
+            </div>
+          </div>
+          <div class="record_content">
+            <div class="content">
+              <textarea class="record_text" name="" placeholder="说点什么吧"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="record_item" id="eleven_month">
+          <div class="record_month">
+            <div class="t_month">
+              <span>11月</span>
+            </div>
+            <div class="month_icon">
+              <img src="./img/13.png" alt="">
+            </div>
+          </div>
+          <div class="record_content">
+            <div class="content">
+              <textarea class="record_text" name="" placeholder="说点什么吧"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="record_item" id="twe_month">
+          <div class="record_month">
+            <div class="t_month">
+              <span>12月</span>
+            </div>
+            <div class="month_icon">
+              <img src="./img/14.png" alt="">
+            </div>
+          </div>
+          <div class="record_content">
+            <div class="content">
+              <textarea class="record_text" name="" placeholder="说点什么吧"></textarea>
+            </div>
+          </div>
+          <div class="note_option">
+            <div class="note_item ">
+              <a href="#one_month" class="note_item_y">1月~3月</a>
+            </div>
+            <div class="note_item">
+              <a href="#four_month" class="note_item_y">4月~6月</a>
+            </div>
+            <div class="note_item">
+              <a href="#seven_month" class="note_item_y">7月~9月</a>
+            </div>
+            <div class="note_item">
+              <a href="#ten_month" class="note_item_y">10月~12月</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line">
+        <img width="100%" src="./img/line.jpg" alt="">
+      </div>
+    </div>
+    <!-- 页面滚动状态 start -->
+    <div class="scroll_state">
+      <div class="scroll_down" id="scroll_down">
+        <a href="#"><img src="./img/arrow.png" alt=""></a>
+      </div>
+      <div class="scroll_up" id="scroll_up">
+        <a href="#"><img src="./img/arrow.png" alt=""></a>
+      </div>
+    </div>
+    <!-- 页面滚动状态 end -->
+  </main>
+  <div class="end">
+    <!-- <p>EVERY DAY IS A GOOD DAY</p> -->
+    <p>NOW IS THE REAI BEGINNG</p>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="ft__menu">
+        <ul class="ft__menu__list">
+          <li class="menu__list__item">
+            <a href="./index.html">
+              <i class="left_arrow">
+                <img src="./img/left_arrow.png" alt="">
+              </i>Top Page
+            </a>
+          </li>
+          <li class="menu__list__item"><a href="./Almanac.html">Almanac</a></li>
+          <li class="menu__list__item"><a href="./Holiday.html">Holiday</a></li>
+          <li class="menu__list__item"><a href="./Note.html">Note</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="ft__tip">
+        <span>*季節の歲時記は過去30年間の平均です</span>
+        <span>情報提供：一般財団法人 日本気象協会</span>
+    </div> -->
+  </footer>
+
+  <script src="./js/jquery.js"></script>
+  <script src="./js/scrollState.js"></script>
+  <script src="./js/date.js"></script>
+  <script>
+
+    $(function () {
+
+      // 请求连接
+      const BASE_URL = 'http://127.0.0.1:3000'
+
+      // 请求note数据
+      $.get(BASE_URL + '/notes', (data) => {
+        let index = 0
+        for (let data_item of data) {
+          $('.record_text').eq(index).val(data_item.content)
+          index++
+        }
+      })
+
+
+      // 设置上索引, key
+      $('.record_text').each(function (index, el) {
+
+        // 跳转当前日期
+        $(el).parents('.record_item').find('.month_icon').click(() => { console.log(1); location.href = './Newday.html?mon=' + (index + 1) })
+
+        el.setAttribute('data-index', index)
+        let localkey = 'note' + index
+        el.setAttribute('data-key', localkey)
+      })
+
+      let timer = null;
+      // 记录日志
+      $('.record_text').keyup(function () {
+        let index = $(this).attr('data-index')
+        let content = $(this).val()
+        let wait = 1000
+
+        if (timer !== null) {
+          clearTimeout(timer);
+        }
+        timer = setTimeout(() => {
+          $.post(BASE_URL + '/note/' + ++index, { content }, function (data) {
+            console.log('data', data)
+          })
+        }, wait);
+
+      })
+
+
+      // $('.record_text').keyup(function (e) {
+      //   e.preventDefault()
+      //   // let text = $(this).val()
+      //   // let localkey = $(this).attr('data-key')
+      //   // // 存入本地
+      //   // localStorage.setItem(localkey, text)
+      // })
+
+    })
+
+  </script>
+</body>
+
+</html>

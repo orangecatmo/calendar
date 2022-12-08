@@ -1,0 +1,198 @@
+@media screen and (max-width: 1720px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrap {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  table {
+    padding: 0;
+  }
+
+  section .title {
+    width: 70%;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .main .container {
+    padding: .42rem;
+    padding-bottom: 5rem;
+    /* background-image: url("../img/mbg.png"); */
+  }
+
+  .dayIntroduced__left .dayIntroduced__list__item span {
+    width: 13rem;
+  }
+
+  .dayIntroduced__right .dayIntroduced__list__item span {
+    width: auto;
+  }
+
+  .dayIntroduced__right {
+    margin-left: 0;
+    text-align: right;
+  }
+
+  .calendar {
+    width: 100%;
+    margin-right: 0;
+    padding: .5rem;
+    margin: 2rem 0;
+  }
+
+  section .time .time__month .time__month--info {
+    margin-top: .83rem;
+  }
+
+  section .time .time__month {
+    position: absolute;
+    left: 50%;
+    top: 18rem;
+    margin-left: 0;
+    font-size: 0.73rem;
+    transform: translateX(-50%);
+  }
+
+  section .time .time__month .time__bg {
+    width: 7.3rem;
+    right: 50%;
+    top: -50%;
+    /* bottom: 50%; */
+    right: auto;
+    height: 7.3rem;
+    margin-left: 3.65rem;
+    /* transform: translate(50%, 50%); */
+  }
+
+  .tl-toubu p {
+    font-size: 1.5rem;
+  }
+
+  .ri-toubu-right img {
+    width: 1.5rem;
+  }
+
+  section .time .time__current {
+    font-size: 1rem;
+    transform: scale(.8) translateY(-.8rem);
+  }
+
+  section .time .time__current .time__current--hs {
+    margin-top: 1rem;
+  }
+
+  .main .calender_wrap .calender_month .month {
+    font-size: 30px;
+  }
+
+  .dayIntroduced__left__item:first-child {
+    position: absolute;
+    top: 0rem;
+    right: 2%;
+    transform: scale(.8);
+  }
+
+  .tl-toubu .ri-toubu-right div span {
+    font-size: 1rem;
+  }
+
+  .dayIntroduced__item__title {
+    margin-bottom: .5rem;
+  }
+
+  .dayIntroduced__item__list {
+    padding: 1rem;
+  }
+  .main .calender_year {
+    margin: 86px 0;
+  }
+
+  .dayIntroduced__bottom {
+    margin-top: 2rem;
+  }
+
+  .dayIntroduced__bottom .dayIntroduced__item:last-child {
+    margin-top: 2rem;
+  }
+
+  .dayIntroduced__left .dayIntroduced__left__item:first-child .dayIntroduced__item__title p {
+    justify-content: end;
+  }
+
+  .dayIntroduced__left__item:first-child .dayIntroduced__item__list {
+    text-align: right;
+  }
+
+  .end {
+    font-size: 1rem;
+  }
+  
+  .footer {
+    padding-bottom: 0;
+  }
+
+  .footer .ft__menu__list .menu__list__item+.menu__list__item {
+    margin-left: 1.25rem;
+  }
+
+  .ft__tip {
+    transform: scale(.7) translateX(-6rem);
+  }
+
+  .ft__tip span:last-child {
+    display: block;
+    width: fit-content;
+    transform: translate(18rem, -1.4rem);
+  }
+
+  .main .calender_wrap .calender_month {
+    width: 90%;
+  }
+  .main .calender_year h4 {
+    font-size: 40px;
+  }
+  .main .calender_year_prev, .main .calender_year_next {
+    width: 49px;
+  }
+  .scroll_state .scroll_down, .scroll_state .scroll_up {
+    width: 20px;
+  }
+  .main .calender_wrap .calender_month .day_table .tbody td {
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wrap {
+      width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .time__current {
+    display: none;
+  }
+
+
+}

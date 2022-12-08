@@ -1,0 +1,238 @@
+@keyframes one {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.list>.clearfix>.aos-init>dt>img {
+    width: 35%;
+}
+
+.list>.clearfix>.aos-init:nth-child(1)>dt>img {
+    animation: one 3s linear infinite;
+}
+
+
+/* 进场过度 */
+
+@keyframes from_two {
+    to {
+        transform: rotate(60deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes two {
+    to {
+        transform: scale(1);
+    }
+    from {
+        transform: scale(1.2);
+    }
+}
+
+.list>.clearfix>.aos-init:nth-child(2)>dt>img {
+    opacity: 0;
+    transform: rotateY(80deg) scale(1.5);
+    animation: from_two 0.5s 0.5s forwards, two 0.5s 0.8s alternate linear infinite;
+}
+
+
+/*
+.list>.clearfix>.aos-init:nth-child(2)>dt>img {
+    animation: two 1s alternate linear infinite;
+} */
+
+@keyframes three {
+    to {
+        transform: rotateY(0deg);
+    }
+    from {
+        transform: rotateY(360deg);
+    }
+}
+
+.list>.clearfix>.aos-init:nth-child(3)>dt>img {
+    animation: three 2s alternate linear infinite;
+}
+
+@keyframes four {
+    to {
+        transform: rotate(30deg);
+        transform-origin: 50% 0;
+    }
+    from {
+        transform: rotate(-30deg);
+        transform-origin: 50% 0;
+    }
+}
+
+.list>.clearfix>.aos-init:nth-child(4)>dt>img {
+    animation: four 2s alternate linear infinite;
+}
+
+@keyframes five {
+    0% {
+        /* transform: rotate(360deg); */
+        transform: rotate(0deg) scale(1);
+    }
+    100% {
+        /* transform: rotate(-360deg); */
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+.list>.clearfix>.aos-init:nth-child(5)>dt>img {
+    animation: five 2s alternate linear infinite;
+}
+
+@keyframes six {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.list>.clearfix>.aos-init:nth-child(6)>dt>img {
+    animation: six 2s alternate linear infinite;
+}
+
+@keyframes seven {
+    to {
+        transform: rotateX(0deg);
+    }
+    from {
+        transform: rotateX(360deg);
+    }
+}
+
+.list>.clearfix>.aos-init:nth-child(7)>dt>img {
+    animation: seven 2s alternate linear infinite;
+}
+
+@keyframes eight {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.list>.clearfix>.aos-init:nth-child(8)>dt>img {
+    animation: eight 2s alternate linear infinite;
+}
+
+@keyframes nine {
+    to {
+        transform: rotate(30deg);
+        transform-origin: bottom;
+    }
+    from {
+        transform: rotate(-30deg);
+        transform-origin: bottom;
+    }
+}
+
+.list>.clearfix>.aos-init:nth-child(9)>dt>img {
+    animation: nine 2s alternate linear infinite;
+}
+
+@keyframes ten {
+    to {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}
+
+.list>.clearfix>.aos-init:nth-child(10)>dt>img {
+    animation: ten 2s alternate linear infinite;
+}
+
+@keyframes eleven {
+    to {
+        transform: rotateY(0deg);
+    }
+    from {
+        transform: rotateY(360deg);
+    }
+}
+
+.list>.clearfix>.aos-init:nth-child(11)>dt>img {
+    animation: three 2s alternate linear infinite;
+}
+
+
+/* 
+@keyframes twelve {
+    0% {
+        transform: rotate(50deg) scale(0);
+        transform-origin: bottom;
+    }
+    100% {
+        transform: rotate(-50deg) scale(1);
+        transform-origin: bottom;
+    }
+} */
+
+@keyframes twelve {
+    0%,
+    65% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    70% {
+        -webkit-transform: rotate(6deg);
+        transform: rotate(6deg);
+    }
+    75% {
+        -webkit-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+    }
+    80% {
+        -webkit-transform: rotate(6deg);
+        transform: rotate(6deg);
+    }
+    85% {
+        -webkit-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+    }
+    90% {
+        -webkit-transform: rotate(6deg);
+        transform: rotate(6deg);
+    }
+    95% {
+        -webkit-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.list>.clearfix>.aos-init:nth-child(12)>dt>img {
+    /* animation: twelve 1.5s linear infinite alternate-reverse; */
+    animation: twelve 3s 0s infinite;
+    transform-origin: bottom;
+}
+
+[data-aos][data-aos][data-aos-delay="3200"].aos-animate, body[data-aos-delay="3200"] [data-aos].aos-animate {
+    transition-delay: 3.2s;
+}
+[data-aos][data-aos][data-aos-delay="3600"].aos-animate, body[data-aos-delay="3600"] [data-aos].aos-animate {
+    transition-delay: 3.6s;
+}
+[data-aos][data-aos][data-aos-delay="4000"].aos-animate, body[data-aos-delay="4000"] [data-aos].aos-animate {
+    transition-delay: 4s;
+}
+[data-aos][data-aos][data-aos-delay="4400"].aos-animate, body[data-aos-delay="4400"] [data-aos].aos-animate {
+    transition-delay: 4.4s;
+}

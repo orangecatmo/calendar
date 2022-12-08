@@ -1,0 +1,344 @@
+@media screen and (max-width:1200px) {
+    .wrap {
+        width: 90% !important;
+    }
+    .b_le {
+        float: none;
+    }
+    .b_ri {
+        float: left !important;
+    }
+    .main_list .list_p {
+        font-size: 2.6875rem;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .nav ul li {
+        display: block !important;
+    }
+    .map {
+        height: 30em !important;
+    }
+}
+
+
+/* css reset */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+a {
+    /* color: #5c5c5c; */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d20c58;
+}
+
+img {
+    max-width: 100%;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:before,
+q:after {
+    content: "";
+}
+
+
+/* css base */
+
+body {
+    background: #060d27;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    padding: 5px 0;
+    margin: 30px 0;
+    user-select: none;
+}
+
+.wrap ul {
+    display: flex;
+}
+
+.nav ul li {
+    display: inline-block;
+    color: #fff;
+}
+
+.nav ul li+li {
+    margin-left: 5rem;
+}
+
+.nav ul li a {
+    color: #e3c200;
+    font-family: Ayuthaya;
+}
+
+.list {
+    margin: 35px 0;
+}
+
+.list dl {
+    width: 25%;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+}
+
+.list dl dd {
+    padding: 5px 0;
+}
+
+/* 图标动画 */
+.icon_animate {
+ display: flex;
+ flex-wrap: wrap;
+ row-gap: 71px;
+}
+.icon_animate::after {
+    display: none;
+}
+
+.main {
+    position: relative;
+    /* margin-bottom: 50px; */
+    margin-bottom: 9.25rem;
+}
+
+.main h4 {
+    background: #615564;
+    padding: 5px 20px;
+    color: #dfbe00;
+}
+
+/* 小标题定位到 内容下边位置 */
+.main h4 {
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    font-size: 1.875rem;
+    background: none;
+    color: #060D26;
+    transform: translateX(-50%);
+    font-family: ipagp;
+}
+
+#wr4 {
+    bottom: 10%;
+}
+
+#wr5 {
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(232,190,0);
+}
+
+/* 星号图标 上移 */
+.main h4 a {
+    position: relative;
+    top: -10px;
+}
+
+#wr5 a {
+    float: none;
+}
+
+.main_list {
+    background: #fff;
+    width: 100%;
+    /* height: 300px; */
+    height: 439px;
+    /* padding-bottom: 100px; */
+    /* background-position-x: 10px; */
+    transition: all 1s linear;
+}
+
+.mian_back {
+    position: relative;
+    height: 100%;
+    /* background-image: url(../img/T.png); */
+    background-image: url("../img/t_bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+.arrow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 24px;
+    color: #fff;
+    width: fit-content;
+    transform: translate(-50%, -50%);
+}
+
+.mian_back2 {
+    opacity: 0;
+    height: 200px;
+    background-image: url(../img/T2.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+.list_p {
+    /* padding-top: 50px; */
+    padding-top: 159px;
+    font-size: 43px;
+    text-align: center;
+    color: #060d27;
+    font-family: ipagp;
+}
+
+
+/* .main_list ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main_list ul li a {
+    color: #fff;
+} */
+
+.b_le {
+    float: left;
+}
+
+.b_le img {
+    width: 90%;
+}
+
+.yright {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    z-index: 20;
+}
+
+.yright img {
+    display: block;
+    margin: 15px auto;
+}
+
+.mapWrap {
+    padding-bottom: 59px;
+}
+
+.map {
+    height: 377px;
+    width: 100%;
+}
+
+/* 星号图标 */
+.star_icon {
+    width: 21px;
+    height: 21px;
+}
+
+/* 线条 */
+.line {
+    margin-bottom: 160px;
+}
+

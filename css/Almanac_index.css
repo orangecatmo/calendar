@@ -1,0 +1,86 @@
+.header {
+    font-size: 1.3rem;
+}
+
+.nav {
+    margin: 2.5rem 0;
+}
+
+.menu .menu__list {
+    display: flex;
+}
+
+.menu .menu__list .menu__list__item {
+    color: #FFCE15;
+}
+
+.menu .menu__list .menu__list__item+.menu__list__item {
+    margin-left: 5rem;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .title {
+    width: 45.53rem;
+}
+
+section .title img {
+    width: 100%;
+}
+
+section .time .calender_year {
+    display: flex;
+    /* font-size: 1.72rem; */
+    /* flex-direction: column; */
+}
+
+section .time #currentYear {
+    font-size: 2.8rem;
+}
+
+.end {
+    position: relative;
+    font-size: 1.4rem;
+    text-align: center;
+    max-width: 100rem;
+    width: fit-content;
+    margin: auto;
+}
+
+.end::after {
+    content: "";
+    position: absolute;
+    right: -1.2rem;
+    top: 0rem;
+    display: block;
+    width: .62rem;
+    height: .62rem;
+    background-image: url("../img/星星8.png");
+    background-size: 100% 100%;
+}
+
+.footer {
+    padding-bottom: 1.3rem;
+    max-width: 100rem;
+    margin: auto;
+}
+
+.footer .ft__menu__list {
+    display: flex;
+    justify-content: center;
+    color: #FFCE15;
+    font-size: 0.94rem;
+    margin: 1rem 0;
+}
+
+.footer .ft__menu__list .menu__list__item+.menu__list__item {
+    margin-left: 3.5rem;
+}
+
+.footer .ft__tip span {
+    margin-left: 1.35rem;
+    font-size: 0.52rem;
+}

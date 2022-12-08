@@ -1,0 +1,36 @@
+/* 页面滚动状态 style */
+.scroll_state .scroll_down,
+.scroll_state .scroll_up {
+  position: fixed;
+  top: 60%;
+  width: 20px;
+  z-index: 99;
+  opacity: 0;
+  /* pointer-events: none; */
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+
+.scroll_state .scroll_down:hover,
+.scroll_state .scroll_up:hover {
+  opacity: 1;
+}
+
+.scroll_state .scroll_show {
+  opacity: 1;
+}
+
+.scroll_state .scroll_down img,
+.scroll_state .scroll_up img {
+  width: 100%;
+}
+
+.scroll_state .scroll_down {
+  right: 3%;
+}
+
+.scroll_state .scroll_up {
+  left: 3%;
+  /* 旋转箭头180度，朝上 */
+  transform: rotate(180deg);
+}

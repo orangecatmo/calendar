@@ -1,0 +1,309 @@
+@media screen and (max-width: 1720px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .wrap {
+        width: 80% !important;
+    }
+
+    #demo {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .scroll_state .scroll_down,
+    .scroll_state .scroll_up {
+        display: none;
+        width: 27px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    /* .menu .menu__list {
+        transform: scale(.8) translateX(-3.5rem);
+    } */
+    table {
+        padding: 0;
+    }
+
+    section .title {
+        width: 70%;
+    }
+
+    .list_p {
+        padding-top: 60px !important;
+    }
+
+
+    .main {
+        position: relative;
+    }
+
+    .main .container {
+        padding: .42rem;
+        /* padding-top: 15rem; */
+        padding-bottom: 5rem;
+        /* background-image: url("../img/mbg.png"); */
+    }
+
+    .main .calender_wrap .calender_month {
+        width: 100%;
+    }
+
+    .main .calender_year {
+        margin-top: 63px;
+        margin-bottom: 49px;
+    }
+
+    .dayIntroduced__left .dayIntroduced__left__item:last-child,
+    .dayIntroduced__right .dayIntroduced__right__item {
+        transform: scale(.8);
+    }
+
+    .dayIntroduced__left .dayIntroduced__list__item span {
+        width: 13rem;
+    }
+
+    .dayIntroduced__right .dayIntroduced__list__item span {
+        width: auto;
+    }
+
+    .dayIntroduced__right {
+        margin-left: 0;
+        text-align: right;
+    }
+
+
+
+    .calendar {
+        width: 100%;
+        margin-right: 0;
+        padding: .5rem;
+        margin: 2rem 0;
+    }
+
+    section .time .time__month .time__month--info {
+        margin-top: .83rem;
+    }
+
+    section .time .time__month {
+        position: absolute;
+        left: 50%;
+        top: 18rem;
+        margin-left: 0;
+        font-size: 0.73rem;
+        transform: translateX(-50%);
+    }
+
+    .tl-toubu p {
+        font-size: 1.5rem;
+    }
+
+    .ri-toubu-right img {
+        width: 1.5rem;
+    }
+
+    section .time .time__current .time__current--hs {
+        margin-top: 1rem;
+    }
+
+    .dayIntroduced__left__item:first-child {
+        position: absolute;
+        top: 0rem;
+        right: 2%;
+        transform: scale(.8);
+    }
+
+    .tl-toubu .ri-toubu-right div span {
+        font-size: 1rem;
+    }
+
+    .dayIntroduced__item__title {
+        margin-bottom: .5rem;
+    }
+
+    .dayIntroduced__item__list {
+        padding: 1rem;
+    }
+
+    .dayIntroduced__bottom {
+        margin-top: 2rem;
+    }
+
+    .dayIntroduced__bottom .dayIntroduced__item:last-child {
+        margin-top: 2rem;
+    }
+
+    .dayIntroduced__left .dayIntroduced__left__item:first-child .dayIntroduced__item__title p {
+        justify-content: end;
+    }
+
+    .dayIntroduced__left__item:first-child .dayIntroduced__item__list {
+        text-align: right;
+    }
+
+    .end {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding-bottom: 0;
+    }
+
+    .footer .ft__menu__list .menu__list__item+.menu__list__item {
+        margin-left: 1.25rem;
+    }
+
+    .ft__tip {
+        transform: scale(.7) translateX(-6rem);
+    }
+
+    .ft__tip span:last-child {
+        display: block;
+        width: fit-content;
+        transform: translate(18rem, -1.4rem);
+    }
+
+    /* 设置Almanac页面切换日历按钮大小 */
+    .calender_year_next>span>img,
+    .calender_year_prev>span>img {
+        width: 5rem;
+    }
+
+    .scroll_state .scroll_down,
+    .scroll_state .scroll_up {
+        display: none;
+        width: 27px !important;
+    }
+
+    .main {
+        margin-bottom: 1.5rem;
+    }
+
+    .main .sign {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-top: 0;
+    }
+
+    .main .sign .mian_back {
+        background-image: url("../img/T.png");
+    }
+
+    .main_list {
+        height: 40vw !important;
+    }
+
+    .main .sign .main_list .list_p {
+        font-size: 16px;
+    }
+
+    .main h4 {
+        font-size: 14px !important;
+    }
+
+    .main .star_icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    .main .sign h4 a {
+        top: -5px;
+    }
+
+    .main .sign #wr4 {
+        bottom: 5%;
+    }
+
+    .main>.list {
+        padding-top: 50vw;
+        margin: 10vw 0;
+    }
+
+    .list>.clearfix>.aos-init>dt>img {
+        width: 60%;
+    }
+
+    .list dl {
+        width: 33%;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .main .map {
+        height: 40vw !important;
+    }
+
+    .mapWrap {
+        padding-bottom: 39px;
+    }
+
+    .end {
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .list_p {
+        padding-top: 15vw !important;
+    }
+
+    .main .sign .main_list .list_p {
+        font-size: 3.5vw;
+    }
+
+    .main h4 {
+        font-size: 2.5vw !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu .menu__list .menu__list__item+.menu__list__item {
+        margin-left: 4vw;
+    }
+
+    #wr5 {
+        padding: 5px;
+    }
+
+    .mapWrap {
+        padding-bottom: 30px;
+    }
+
+    .main h4 a {
+        top: -5px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .wrap {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .time__current {
+        display: none;
+    }
+}

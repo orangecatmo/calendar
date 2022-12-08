@@ -1,0 +1,131 @@
+.main {
+  padding: 30px 0 110px;
+}
+
+.note_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0;
+  font-size: 17px;
+  color: #060D26;
+}
+
+.note_title {
+  flex: 0 1 385px;
+  text-align: right;
+}
+
+.note_item_y {
+  padding: 15px 20px;
+  background-color: #E8BE00;
+  border-radius: 12px;
+}
+
+.note_option {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.note_option .note_item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  color: #060D26;
+}
+
+#twe_month .note_option,
+#seven_month .note_option {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.note_record .record_item {
+  margin-bottom: 70px;
+}
+
+.note_record .record_item .record_month {
+  font-size: 23px;
+  display: flex;
+  margin: 13px 0;
+}
+
+.note_record .record_item .record_month .t_month {
+  align-self: flex-end;
+}
+
+.note_record .record_item .record_month .month_icon {
+  width: 105px;
+}
+
+.note_record .record_item .record_month .month_icon img {
+  width: 100%;
+}
+
+.note_record .record_item .record_content {
+  margin-bottom: 32px;
+}
+
+.note_record .record_item .record_content .content .record_text {
+  width: 100%;
+  outline: none;
+  padding: 20px;
+  font-size: 14px;
+  background-color: #3B4054;
+  color: #fff;
+  border: none;
+  resize: none;
+  min-height: 247px;
+}
+
+/* 图标动画 */
+#one_month img {
+  animation: one 2s linear infinite;
+}
+
+#two_month img {
+  animation: two 2s linear infinite;
+}
+
+#three_month img {
+  animation: three 2s linear infinite;
+}
+
+#four_month img {
+  animation: four 2s linear infinite;
+}
+
+#five_month img {
+  animation: five 2s linear infinite;
+}
+
+#six_month img {
+  animation: six 2s linear infinite;
+}
+
+#seven_month img {
+  animation: seven 2s linear infinite;
+}
+
+#eight_month img {
+  animation: eight 2s linear infinite;
+}
+
+
+#nine_month img {
+  animation: nine 2s linear infinite;
+}
+
+#ten_month img {
+  animation: ten 2s linear infinite;
+}
+
+#eleven_month img {
+  animation: eleven 2s linear infinite;
+}
+
+#twe_month img {
+  animation: twelve 2s linear infinite;
+}

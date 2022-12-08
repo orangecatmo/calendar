@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>日日是好日</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/public_header.css">
+    <link rel="stylesheet" href="./css/Almanac_style.css">
+    <link rel="stylesheet" href="./css/Almanac_base.css">
+    <link rel="stylesheet" href="./css/Almanac_index.css">
+    <link rel="stylesheet" href="./css/Almanac_media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap">
+            <nav class="nav">
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list__item"><a href="./index.html">
+                                <i class="left_arrow">
+                                    <img src="./img/left_arrow.png" alt="">
+                                </i>Top Page
+                            </a></li>
+                        <li class="menu__list__item"><a href="./Almanac.html">Almanac</a></li>
+                        <li class="menu__list__item"><a href="./Holiday.html">Holiday</a></li>
+                        <li class="menu__list__item"><a href="./Note.html">Note</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section>
+                <div class="title">
+                    <a href="./index.html"><img src="./img/2.png" alt=""></a>
+                </div>
+                <div class="time">
+                    <div class="b_ri">
+                        <dl>
+                            <dt>
+                                <p id="demo"></p>
+                            </dt>
+                            <div class="real_time">
+                                <dd id="dd"></dd>
+                                <dd id="dd2"></dd>
+                            </div>
+                        </dl>
+
+                        <script>
+                            document.querySelector('.time').addEventListener('click', () => { location.href = './Newday.html' })
+                            var d = new Date();
+                            document.getElementById("demo").innerHTML = d.toDateString();
+                        </script>
+                    </div>
+                </div>
+        </div>
+        </section>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrap">
+            <div class="time">
+                <div class="calender_year">
+                    <div class="calender_year_prev">
+                        <span><img src="./img/left_more_arrow.png" alt=""></span>
+                    </div>
+                    <h4 id="currentYear">2022</h4>
+                    <div class="calender_year_next">
+                        <span><img src="./img/right_more_arrow.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+            <div class="calender_wrap" id="calender_wrap">
+                <div class="calender_month JANUARY">
+                    <div class="month">
+                        <span>JANUARY</span>
+                    </div>
+                    <table class="day_table">
+                        <thead class="thead">
+                            <tr>
+                                <td>
+                                    <span>MON</span>
+                                </td>
+                                <td>
+                                    <span>TUE</span>
+                                </td>
+                                <td>
+                                    <span>WED</span>
+                                </td>
+                                <td>
+                                    <span>THU</span>
+                                </td>
+                                <td>
+                                    <span>FRI</span>
+                                </td>
+                                <td>
+                                    <span>SAT</span>
+                                </td>
+                                <td>
+                                    <span>SUN</span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calender_month FEBRUARY">
+                    <div class="month">
+                        <span>FEBRUARY</span>
+                    </div>
+                    <table class="day_table">
+                        <thead class="thead">
+                            <tr>
+                                <td>
+                                    <span>MON</span>
+                                </td>
+                                <td>
+                                    <span>TUE</span>
+                                </td>
+                                <td>
+                                    <span>WED</span>
+                                </td>
+                                <td>
+                                    <span>THU</span>
+                                </td>
+                                <td>
+                                    <span>FRI</span>
+                                </td>
+                                <td>
+                                    <span>SAT</span>
+                                </td>
+                                <td>
+                                    <span>SUN</span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calender_month MARCH">
+                    <div class="month">
+                        <span>MARCH</span>
+                    </div>
+                    <table class="day_table">
+                        <thead class="thead">
+                            <tr>
+                                <td>
+                                    <span>MON</span>
+                                </td>
+                                <td>
+                                    <span>TUE</span>
+                                </td>
+                                <td>
+                                    <span>WED</span>
+                                </td>
+                                <td>
+                                    <span>THU</span>
+                                </td>
+                                <td>
+                                    <span>FRI</span>
+                                </td>
+                                <td>
+                                    <span>SAT</span>
+                                </td>
+                                <td>
+                                    <span>SUN</span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calender_month APRIL">
+                    <div class="month">
+                        <span>APRIL</span>
+                    </div>
+                    <table class="day_table">
+                        <thead class="thead">
+                            <tr>
+                                <td>
+                                    <span>MON</span>
+                                </td>
+                                <td>
+                                    <span>TUE</span>
+                                </td>
+                                <td>
+                                    <span>WED</span>
+                                </td>
+                                <td>
+                                    <span>THU</span>
+                                </td>
+                                <td>
+                                    <span>FRI</span>
+                                </td>
+                                <td>
+                                    <span>SAT</span>
+                                </td>
+                                <td>
+                                    <span>SUN</span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calender_month MAY">
+                    <div class="month">
+                        <span>MAY</span>
+                    </div>
+                    <table class="day_table">
+                        <thead class="thead">
+                            <tr>
+                                <td>
+                                    <span>MON</span>
+                                </td>
+                                <td>
+                                    <span>TUE</span>
+                                </td>
+                                <td>
+                                    <span>WED</span>
+                                </td>
+                                <td>
+                                    <span>THU</span>
+                                </td>
+                                <td>
+                                    <span>FRI</span>
+                                </td>
+                                <td>
+                                    <span>SAT</span>
+                                </td>
+                                <td>
+                                    <span>SUN</span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calender_month JUNE">
+                    <div class="month">
+                        <span>JUNE</span>
+                    </div>
+                    <table class="day_table">
+                        <thead class="thead">
+                            <tr>
+                                <td>
+                                    <span>MON</span>
+                                </td>
+                                <td>
+                                    <span>TUE</span>
+                                </td>
+                                <td>
+                                    <span>WED</span>
+                                </td>
+                                <td>
+                                    <span>THU</span>
+                                </td>
+                                <td>
+                                    <span>FRI</span>
+                                </td>
+                                <td>
+                                    <span>SAT</span>
+                                </td>
+                                <td>
+                                    <span>SUN</span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calender_month JULY">
+                    <div class="month">
+                        <span>JULY</span>
+                    </div>
+                    <table class="day_table">
+                        <thead class="thead">
+                            <tr>
+                                <td>
+                                    <span>MON</span>
+                                </td>
+                                <td>
+                                    <span>TUE</span>
+                                </td>
+                                <td>
+                                    <span>WED</span>
+                                </td>
+                                <td>
+                                    <span>THU</span>
+                                </td>
+                                <td>
+                                    <span>FRI</span>
+                                </td>
+                                <td>
+                                    <span>SAT</span>
+                                </td>
+                                <td>
+                                    <span>SUN</span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calender_month AUGUST">
+                    <div class="month">
+                        <span>AUGUST</span>
+                    </div>
+                    <table class="day_table">
+                        <thead class="thead">
+                            <tr>
+                                <td>
+                                    <span>MON</span>
+                                </td>
+                                <td>
+                                    <span>TUE</span>
+                                </td>
+                                <td>
+                                    <span>WED</span>
+                                </td>
+                                <td>
+                                    <span>THU</span>
+                                </td>
+                                <td>
+                                    <span>FRI</span>
+                                </td>
+                                <td>
+                                    <span>SAT</span>
+                                </td>
+                                <td>
+                                    <span>SUN</span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calender_month SEPTEMBER">
+                    <div class="month">
+                        <span>SEPTEMBER</span>
+                    </div>
+                    <table class="day_table">
+                        <thead class="thead">
+                            <tr>
+                                <td>
+                                    <span>MON</span>
+                                </td>
+                                <td>
+                                    <span>TUE</span>
+                                </td>
+                                <td>
+                                    <span>WED</span>
+                                </td>
+                                <td>
+                                    <span>THU</span>
+                                </td>
+                                <td>
+                                    <span>FRI</span>
+                                </td>
+                                <td>
+                                    <span>SAT</span>
+                                </td>
+                                <td>
+                                    <span>SUN</span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calender_month OCTOBER">
+                    <div class="month">
+                        <span>OCTOBER</span>
+                    </div>
+                    <table class="day_table">
+                        <thead class="thead">
+                            <tr>
+                                <td>
+                                    <span>MON</span>
+                                </td>
+                                <td>
+                                    <span>TUE</span>
+                                </td>
+                                <td>
+                                    <span>WED</span>
+                                </td>
+                                <td>
+                                    <span>THU</span>
+                                </td>
+                                <td>
+                                    <span>FRI</span>
+                                </td>
+                                <td>
+                                    <span>SAT</span>
+                                </td>
+                                <td>
+                                    <span>SUN</span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calender_month NOVEMBER">
+                    <div class="month">
+                        <span>NOVEMBER</span>
+                    </div>
+                    <table class="day_table">
+                        <thead class="thead">
+                            <tr>
+                                <td>
+                                    <span>MON</span>
+                                </td>
+                                <td>
+                                    <span>TUE</span>
+                                </td>
+                                <td>
+                                    <span>WED</span>
+                                </td>
+                                <td>
+                                    <span>THU</span>
+                                </td>
+                                <td>
+                                    <span>FRI</span>
+                                </td>
+                                <td>
+                                    <span>SAT</span>
+                                </td>
+                                <td>
+                                    <span>SUN</span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calender_month DECEMBER">
+                    <div class="month">
+                        <span>DECEMBER</span>
+                    </div>
+                    <table class="day_table">
+                        <thead class="thead">
+                            <tr>
+                                <td>
+                                    <span>MON</span>
+                                </td>
+                                <td>
+                                    <span>TUE</span>
+                                </td>
+                                <td>
+                                    <span>WED</span>
+                                </td>
+                                <td>
+                                    <span>THU</span>
+                                </td>
+                                <td>
+                                    <span>FRI</span>
+                                </td>
+                                <td>
+                                    <span>SAT</span>
+                                </td>
+                                <td>
+                                    <span>SUN</span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 页面滚动状态 start -->
+    <div class="scroll_state">
+        <div class="scroll_down" id="scroll_down">
+            <a href="#"><img src="./img/arrow.png" alt=""></a>
+        </div>
+        <div class="scroll_up" id="scroll_up">
+            <a href="#"><img src="./img/arrow.png" alt=""></a>
+        </div>
+    </div>
+   <div class="end">
+        <p>NOW IS THE REAI BEGINNG</p>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="ft__menu">
+                <ul class="ft__menu__list">
+                    <li class="menu__list__item">
+                        <a href="./index.html">
+                            <i class="left_arrow">
+                                <img src="./img/left_arrow.png" alt="">
+                            </i>Top Page
+                        </a>
+                    </li>
+                    <li class="menu__list__item"><a href="./Almanac.html">Almanac</a></li>
+                    <li class="menu__list__item"><a href="./Holiday.html">Holiday</a></li>
+                    <li class="menu__list__item"><a href="./Note.html">Note</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="ft__tip">
+            <span>*季節の歲時記は過去30年間の平均です</span>
+            <span>情報提供：一般財団法人 日本気象協会</span>
+        </div> -->
+    </footer>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="./js/scrollState.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/Almanac_calender.js"></script>
+</body>
+
+</html>

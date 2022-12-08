@@ -1,0 +1,45 @@
+@media screen and (max-width: 1200px) {
+  .note_option {
+    gap: 10px;
+  }
+
+  .note_item_y {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .note_title {
+    flex: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .note_top {
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+
+  .note_title {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .note_item_y {
+    padding: 1vw;
+  }
+
+  .note_option {
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .note_option .note_item a {
+    font-size: 2.5vw;
+  }
+
+  .main {
+    padding-bottom: 0;
+  }
+}
