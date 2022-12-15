@@ -329,11 +329,16 @@ $(function () {
                 $('.mian_back').css('background-image', "none");
                 $('.list_p').html(drawItem.sign).css({ "color": "#000" })
                 $('.main_list').css("backgroundColor", "#e9c000");
+                $('.main_list .state').html(drawItem.auspicious)
+                $('.main_list .state').show()
             } else {
                 // 再次点击变回原样
-                $('.mian_back').css('background-image', `url(./img/${windowWidth <= 720 ? 'T' : 't_bg'}.png)`);
+
+                // 根据浏览器宽度 改变抽签前 展示的背景图
+                $('.mian_back').css('background-image', `url(./img/${windowWidth <= 720 ? 't_bg_n' : 't_bg_n'}.png)`);
                 $('.list_p').html('今日は何の日ですか').css({ "color": "#000" })
                 $('.main_list').css("backgroundColor", "#fff");
+                $('.main_list .state').hide()
             }
             $('.mian_back').animate({ opacity: 1 }, 1000);
         });
