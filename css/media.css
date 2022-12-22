@@ -203,9 +203,9 @@
         margin-top: 0;
     }
 
-    .main .sign .mian_back {
+    /* .main .sign .mian_back {
         background-image: url("../img/T.png");
-    }
+    } */
 
     .main_list {
         height: 40vw !important;
@@ -268,7 +268,8 @@
         padding-top: 15vw !important;
     }
 
-    .main .sign .main_list .list_p {
+    .main .sign .main_list .list_p,
+    .main .sign .main_list .state {
         font-size: 3.5vw;
     }
 
