@@ -232,7 +232,7 @@ function init_caledar(currentYear, currentMonth) {
     // 上个月最后一天
     let prevMonth_laster = new Date(currentYear, currentMonth, 0).getDate()
     // 日历表格中的数字
-    let table_day = prevMonth_laster - (week_first - 2)
+    let table_day = prevMonth_laster - (week_first - 1)
     // console.log(table_day);
     let flag = false
 
