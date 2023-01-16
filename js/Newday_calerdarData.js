@@ -513,7 +513,7 @@ let calerdar_theme = {
         month_info: {
             top: [{
                     title: "六月の祝日",
-                    title_bg: "./img/花6.png",
+                    title_bg: "",
                     item: [{
                             key: "6月6日（火） ",
                             value: "芒種"

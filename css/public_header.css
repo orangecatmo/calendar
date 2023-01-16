@@ -63,7 +63,6 @@ section .time .time__current .time__current--hs {
   height: 100%;
   cursor: pointer;
 }
-
 .b_ri dl:hover {
   color: #e3c200;
 }
@@ -208,16 +207,7 @@ section .time .time__month .time__bg img {
     font-weight: 300;
     font-size: 12px;
   }
-
   .menu .menu__list .menu__list__item+.menu__list__item {
     margin-left: 4vw !important;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1440px) {
-  section .time {
-    flex: 2;
-    font-size: 1.4rem;
-    justify-content: flex-end;
   }
 }

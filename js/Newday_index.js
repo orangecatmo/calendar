@@ -105,8 +105,6 @@ if (get_mon > -1) {
 
 // 初始化日历
 function init_caledar(currentYear, currentMonth) {
-    // 年历 (令和四年)
-    const _calendar = document.querySelector('#_calendar')
     // this.currentMonth = currentMonth.replace('"', "").replace('"', "");
     const calendar_table = document.querySelector('#calendar_table')
     const timeMonth = document.querySelector('#timeMonth')
@@ -115,9 +113,6 @@ function init_caledar(currentYear, currentMonth) {
     const dayIntroduced_bottom = dayIntroduced.querySelector('.dayIntroduced__bottom')
 
     const currentMonthEl = document.querySelector('#currentMonth')
-
-    // 
-    _calendar.innerHTML = calendarTransform(currentYear)
 
     // console.log("当前月份:" + currentMonth);
 
@@ -232,7 +227,7 @@ function init_caledar(currentYear, currentMonth) {
     // 上个月最后一天
     let prevMonth_laster = new Date(currentYear, currentMonth, 0).getDate()
     // 日历表格中的数字
-    let table_day = prevMonth_laster - (week_first - 1)
+    let table_day = prevMonth_laster - (week_first - 2)
     // console.log(table_day);
     let flag = false
 
@@ -395,66 +390,3 @@ next.addEventListener('click', function (e) {
     init_caledar(year, ++month)
 
 })
-
-// 中文转数字
-function ChineseToNumber(chnStr) {
-    var rtn = 0;
-    var section = 0;
-    var number = 0;
-    var secUnit = false;
-    var str = chnStr.split('');
-
-    for (var i = 0; i < str.length; i++) {
-        var num = chnNumChar[str[i]];
-        if (typeof num !== 'undefined') {
-            number = num;
-            if (i === str.length - 1) {
-                section += number;
-            }
-        } else {
-            var unit = chnNameValue[str[i]].value;
-            secUnit = chnNameValue[str[i]].secUnit;
-            if (secUnit) {
-                section = (section + number) * unit;
-                rtn += section;
-                section = 0;
-            } else {
-                section += (number * unit);
-            }
-            number = 0;
-        }
-    }
-    return rtn + section;
-}
-
-// 转为 年历
-function calendarTransform(year) {
-    switch (year) {
-        case 2019:
-            return "令和一年"
-        case 2020:
-            return "令和二年"
-        case 2021:
-            return "令和三年"
-        case 2022:
-            return "令和四年"
-        case 2023:
-            return "令和五年"
-        case 2024:
-            return "令和六年"
-        case 2025:
-            return "令和七年"
-        case 2026:
-            return "令和八年"
-        case 2027:
-            return "令和九年"
-        case 2028:
-            return "令和十年"
-        case 2029:
-            return "令和十一年"
-        case 2030:
-            return "令和十二年"
-        case 2031:
-            return "令和十三年"
-    }
-}
