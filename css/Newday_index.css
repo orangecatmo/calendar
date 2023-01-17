@@ -186,7 +186,7 @@ section .time .time__month .time__bg img {
 #zr_bg {
     position: absolute;
     right: 0;
-    top: 0;
+    top: -10px;
     width: 2rem;
 }
 
@@ -238,7 +238,6 @@ td {
 thead>tr th {
     border: none;
     color: #F4F4F4;
-    color: rgba(255, 255, 255, .1);
 }
 
 .calendar_end {
@@ -274,7 +273,6 @@ thead>tr th {
 
 .rl-top>tr td {
     color: #ccc;
-    color: rgba(255, 255, 255, .1);
 }
 
 .rl-top>tr .currentDate {
