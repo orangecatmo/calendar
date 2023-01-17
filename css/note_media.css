@@ -42,4 +42,14 @@
   .main {
     padding-bottom: 0;
   }
+
+  .note_record .record_item .record_month .month_icon {
+    width: 65px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .note_item_y {
+    padding: 5px 2px;
+  }
 }

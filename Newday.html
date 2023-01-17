@@ -2,298 +2,298 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="referrer" content="no-referrer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>日日是好日</title>
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/public_header.css">
-    <link rel="stylesheet" href="./css/Newday_index.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <link rel="stylesheet" href="./css/Newday_media.css">
-    <link rel="stylesheet" href="./css/Newday_animation.css">
+  <meta charset="UTF-8">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>日日是好日</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/public_header.css">
+  <link rel="stylesheet" href="./css/Newday_index.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/Newday_media.css">
+  <link rel="stylesheet" href="./css/Newday_animation.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container wrap">
-            <nav class="nav">
-                <div class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list__item"><a href="./index.html">
-                                <i class="left_arrow">
-                                    <img src="./img/left_arrow.png" alt="">
-                                </i>Top Page
-                            </a></li>
-                        <li class="menu__list__item"><a href="./Almanac.html">Almanac</a></li>
-                        <li class="menu__list__item"><a href="./Holiday.html">Holiday</a></li>
-                        <li class="menu__list__item"><a href="./Note.html">Note</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <section>
-                <div class="title">
-                    <a href="./index.html"><img src="./img/2.png" alt=""></a>
-                </div>
-                <div class="time">
-                    <div class="time__current">
-                        <div class="time__current--date">
-                            <p id="currentDate">2022年6月29日</p>
-                        </div>
-                        <div class="time__current--hs">
-                            <span id="timeHs">19:45</span>
-                            <span id="timeWeek">水曜日</span>
-                        </div>
-                    </div>
-                    <div class="time__month" id="timeMonth">
-                        <a href="#">
-                            <div class="time__month--current">
-                                <p>JANUARY</p>
-                            </div>
-                            <div class="time__month--info">
-                                <p>睦 月</p>
-                            </div>
-                            <div class="time__bg">
-                                <img id="move_bg" height="100%" width="100%" src="./img/P-11.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
+  <header class="header">
+    <div class="container wrap">
+      <nav class="nav">
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__list__item"><a href="./index.html">
+                <i class="left_arrow">
+                  <img src="./img/left_arrow.png" alt="">
+                </i>Top Page
+              </a></li>
+            <li class="menu__list__item"><a href="./Almanac.html">Almanac</a></li>
+            <li class="menu__list__item"><a href="./Holiday.html">Holiday</a></li>
+            <li class="menu__list__item"><a href="./Note.html">Note</a></li>
+          </ul>
         </div>
-    </header>
-    <main class="main">
-        <div class="container wrap" id="container">
-            <div class="calendar">
-                <div class="tl-toubu">
-                    <div class="ri-toubu-right">
-                        <div class="prevMonth" id="prev">
-                            <span id="prevMonth">12</span>
-                            <span>月</span>
-                            <!-- <a href="#" id="prev">月<img src="./img/left.png" alt=""></a> -->
-                        </div>
-                        <p class="currentMonth" id="currentMonth">月</p>
-                        <div class="nextMonth" id="next">
-                            <span id="nextMonth">2</span>
-                            <span>月</span>
-                            <!-- <a href="#" id="next"><img src="./img/right.png" alt=""></a> -->
-                        </div>
-                    </div>
-                </div>
-                <table cellspacing="0" border-collapse="collapse">
-                    <thead>
-                        <tr valign="middle">
-                            <th>MON</th>
-                            <th>TUE</th>
-                            <th>WED</th>
-                            <th>THU</th>
-                            <th>FRI</th>
-                            <th>SAT</th>
-                            <th>SUN</th>
-                        </tr>
-                    </thead>
-                    <tbody class="rl-top" id="calendar_table"></tbody>
-                </table>
-                <div class="calendar_end">
-                    <div class="left">
-                        <ul>
-                            <li><i><img src="./img/new_moon.png" alt=""></i><span>新月</span></li>
-                            <li><i><img src="./img/half_moon.png" alt=""></i><span>上弦</span></li>
-                            <li><i><img src="./img/full_moon.png" alt=""></i><span>满月</span></li>
-                            <li><i><img src="./img/waning_moon.png" alt=""></i><span>下弦</span></li>
-                        </ul>
-                    </div>
-                    <div class="right">
-                        <span id="_calendar">令和四年 </span>
-                    </div>
-                </div>
-            </div>
-            <div class="dayIntroduced" id="dayIntroduced">
-                <div class="dayIntroduced__top">
-                    <div class="dayIntroduced__item" id="holiday">
-                        <div class="dayIntroduced__item__title">
-                            <p>一月の祝日</p>
-                            <i id="zr_bg"><img src="./img/1_z.png" alt=""></i>
-                        </div>
-                        <div class="dayIntroduced__item__list">
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>1月1日 （土）</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>元日</span>
-                                </div>
-                            </div>
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>1月10日 （月）</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>成人の日</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dayIntroduced__item" id="solarTerm">
-                        <div class="dayIntroduced__item__title">
-                            <p>一月の節気</p>
-                        </div>
-                        <div class="dayIntroduced__item__list">
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>小寒</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>1月5日頃</span>
-                                </div>
-                            </div>
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>大寒</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>1月20日頃</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dayIntroduced__bottom">
-                    <div class="dayIntroduced__item">
-                        <div class="dayIntroduced__item__title">
-                            <p>一月の歲時記</p>
-                        </div>
-                        <div class="dayIntroduced__item__list">
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>1月1日</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>名古屋、スイセンの開花の頃</span>
-                                </div>
-                            </div>
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>1月5日</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>那霸、ツバキの開花の頃</span>
-                                </div>
-                            </div>
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>1月6日</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>佐賀、スイセンの開花の頃</span>
-                                </div>
-                            </div>
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>1月9日</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>延岡、初雪の頃</span>
-                                </div>
-                            </div>
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>1月11日</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>館野、初雪の頃</span>
-                                </div>
-                            </div>
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>1月15日</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>高松、ツバキの開花の頃</span>
-                                </div>
-                            </div>
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>1月19日</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>名瀨、サクラの開花の頃</span>
-                                </div>
-                            </div>
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>1月22日</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>宫崎、 ウメの開花の頃</span>
-                                </div>
-                            </div>
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>1月24日</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>宫崎、 鹿児島、タンポポの開花の頃</span>
-                                </div>
-                            </div>
-                            <div class="dayIntroduced__list__item">
-                                <div class="solar_term">
-                                    <span>1月30日</span>
-                                </div>
-                                <div class="solar_term_date">
-                                    <span>宫崎、 広島、ツバキの開花の頃</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dayIntroduced__item">
-                        <div class="dayIntroduced__item__title">
-                            <p>季節の食材</p>
-                        </div>
-                        <div class="dayIntroduced__item__list">
-                            <div class="dayIntroduced__list__item">
-                                <p>河豚</p>
-                                <p>ぶり</p>
-                                <p>カリフラワー</p>
-                                <p>京菜</p>
-                            </div>
-                            <div class="dayIntroduced__list__item">
-                                <p>温州みかん</p>
-                                <p>ゆず</p>
-                                <p>ポンカン</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </nav>
+      <section>
+        <div class="title">
+          <a href="./index.html"><img src="./img/2.png" alt=""></a>
         </div>
-    </main>
-    <div class="end">
-        <p>NOW IS THE REAL BEGINNG</p>
+        <div class="time">
+          <div class="time__current">
+            <div class="time__current--date">
+              <p id="currentDate">2022年6月29日</p>
+            </div>
+            <div class="time__current--hs">
+              <span id="timeHs">19:45</span>
+              <span id="timeWeek">水曜日</span>
+            </div>
+          </div>
+          <div class="time__month" id="timeMonth">
+            <a href="#">
+              <div class="time__month--current">
+                <p>JANUARY</p>
+              </div>
+              <div class="time__month--info">
+                <p>睦 月</p>
+              </div>
+              <div class="time__bg">
+                <img id="move_bg" height="100%" width="100%" src="./img/P-11.png" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="ft__menu">
-                <ul class="ft__menu__list">
-                    <li class="menu__list__item"><a href="#">Top Page</a></li>
-                    <li class="menu__list__item"><a href="#">Almanac</a></li>
-                    <li class="menu__list__item"><a href="#">Holiday</a></li>
-                    <li class="menu__list__item"><a href="#">Note</a></li>
-                </ul>
+  </header>
+  <main class="main">
+    <div class="container wrap" id="container">
+      <div class="calendar">
+        <div class="tl-toubu">
+          <div class="ri-toubu-right">
+            <div class="prevMonth" id="prev">
+              <span id="prevMonth">12</span>
+              <span>月</span>
+              <!-- <a href="#" id="prev">月<img src="./img/left.png" alt=""></a> -->
             </div>
+            <p class="currentMonth" id="currentMonth">月</p>
+            <div class="nextMonth" id="next">
+              <span id="nextMonth">2</span>
+              <span>月</span>
+              <!-- <a href="#" id="next"><img src="./img/right.png" alt=""></a> -->
+            </div>
+          </div>
         </div>
-        <div class="ft__tip">
-            <span>*季節の歲時記は過去30年間の平均です</span>
-            <span>情報提供：一般財団法人 日本気象協会</span>
+        <table cellspacing="0" border-collapse="collapse">
+          <thead>
+            <tr valign="middle">
+              <th style="color: #FFCE15;">SUN</th>
+              <th>MON</th>
+              <th>TUE</th>
+              <th>WED</th>
+              <th>THU</th>
+              <th>FRI</th>
+              <th style="color: #FFCE15;">SAT</th>
+            </tr>
+          </thead>
+          <tbody class="rl-top" id="calendar_table"></tbody>
+        </table>
+        <div class="calendar_end">
+          <div class="left">
+            <ul>
+              <li><i><img src="./img/new_moon.png" alt=""></i><span>新月</span></li>
+              <li><i><img src="./img/half_moon.png" alt=""></i><span>上弦</span></li>
+              <li><i><img src="./img/full_moon.png" alt=""></i><span>满月</span></li>
+              <li><i><img src="./img/waning_moon.png" alt=""></i><span>下弦</span></li>
+            </ul>
+          </div>
+          <div class="right">
+            <span id="_calendar">令和四年 </span>
+          </div>
         </div>
-    </footer>
+      </div>
+      <div class="dayIntroduced" id="dayIntroduced">
+        <div class="dayIntroduced__top">
+          <div class="dayIntroduced__item" id="holiday">
+            <div class="dayIntroduced__item__title">
+              <p>一月の祝日</p>
+              <i id="zr_bg"><img src="./img/1_z.png" alt=""></i>
+            </div>
+            <div class="dayIntroduced__item__list">
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>1月1日 （土）</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>元日</span>
+                </div>
+              </div>
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>1月10日 （月）</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>成人の日</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dayIntroduced__item" id="solarTerm">
+            <div class="dayIntroduced__item__title">
+              <p>一月の節気</p>
+            </div>
+            <div class="dayIntroduced__item__list">
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>小寒</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>1月5日頃</span>
+                </div>
+              </div>
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>大寒</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>1月20日頃</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dayIntroduced__bottom">
+          <div class="dayIntroduced__item">
+            <div class="dayIntroduced__item__title">
+              <p>一月の歲時記</p>
+            </div>
+            <div class="dayIntroduced__item__list">
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>1月1日</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>名古屋、スイセンの開花の頃</span>
+                </div>
+              </div>
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>1月5日</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>那霸、ツバキの開花の頃</span>
+                </div>
+              </div>
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>1月6日</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>佐賀、スイセンの開花の頃</span>
+                </div>
+              </div>
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>1月9日</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>延岡、初雪の頃</span>
+                </div>
+              </div>
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>1月11日</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>館野、初雪の頃</span>
+                </div>
+              </div>
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>1月15日</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>高松、ツバキの開花の頃</span>
+                </div>
+              </div>
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>1月19日</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>名瀨、サクラの開花の頃</span>
+                </div>
+              </div>
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>1月22日</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>宫崎、 ウメの開花の頃</span>
+                </div>
+              </div>
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>1月24日</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>宫崎、 鹿児島、タンポポの開花の頃</span>
+                </div>
+              </div>
+              <div class="dayIntroduced__list__item">
+                <div class="solar_term">
+                  <span>1月30日</span>
+                </div>
+                <div class="solar_term_date">
+                  <span>宫崎、 広島、ツバキの開花の頃</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dayIntroduced__item">
+            <div class="dayIntroduced__item__title">
+              <p>季節の食材</p>
+            </div>
+            <div class="dayIntroduced__item__list">
+              <div class="dayIntroduced__list__item">
+                <p>河豚</p>
+                <p>ぶり</p>
+                <p>カリフラワー</p>
+                <p>京菜</p>
+              </div>
+              <div class="dayIntroduced__list__item">
+                <p>温州みかん</p>
+                <p>ゆず</p>
+                <p>ポンカン</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="end">
+    <p>NOW IS THE REAI BEGINNG</p>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="ft__menu">
+        <ul class="ft__menu__list">
+          <li class="menu__list__item"><a href="#">Top Page</a></li>
+          <li class="menu__list__item"><a href="#">Almanac</a></li>
+          <li class="menu__list__item"><a href="#">Holiday</a></li>
+          <li class="menu__list__item"><a href="#">Note</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft__tip">
+      <span>*季節の歲時記は過去30年間の平均です</span>
+      <span>情報提供：一般財団法人 日本気象協会</span>
+    </div>
+  </footer>
 
-    <script src="./js/Newday_calerdarData.js"></script>
-    <script src="./js/Newday_calendar.js"></script>
-    <script src="./js/Newday_index.js"></script>
-    <!-- <script src="./js/Newday_new.js"></script> -->
-    <script>
+  <script src="./js/Newday_calerdarData.js"></script>
+  <script src="./js/Newday_calendar.js"></script>
+  <script src="./js/Newday_index.js"></script>
+  <!-- <script src="./js/Newday_new.js"></script> -->
+  <script>
         // //接受参数跳转
         // function getQueryVariable(variable) {
         //     var query = window.location.search.substring(1);
@@ -310,7 +310,7 @@
         // let get_mon = Number(getQueryVariable('mon')) - 1;
         // init_caledar(year, get_mon)
         // console.log(hashSearch, month);
-    </script>
+  </script>
 
 </body>
 

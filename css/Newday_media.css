@@ -40,7 +40,7 @@
   }
 
   .solar_term_date {
-    width: 100px;
+    /* width: 100px; */
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -52,13 +52,17 @@
   html {
     font-size: 14px;
   }
+
+  .calendar {
+    flex: 1;
+  }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+/* @media screen and (max-width: 1024px) and (min-width: 769px) {
   .solar_term_date {
     width: 40px;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   html {
@@ -107,6 +111,7 @@
   }
 
   .calendar {
+    flex: auto;
     width: 100%;
     margin-right: 0;
     padding: .5rem;
