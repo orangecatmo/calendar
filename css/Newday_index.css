@@ -298,6 +298,7 @@ thead>tr th {
 }
 
 .dayIntroduced__item__list {
+  white-space: nowrap;
   border: 1px solid #707070;
   padding: 2rem;
 }
@@ -317,6 +318,10 @@ thead>tr th {
 
 .dayIntroduced__bottom {
   margin-top: 3rem;
+}
+
+.dayIntroduced__bottom .dayIntroduced__item:last-child {
+  margin-left: 1rem;
 }
 
 .dayIntroduced__item__title {
@@ -341,7 +346,7 @@ thead>tr th {
   flex-direction: column;
 }
 
-.dayIntroduced__bottom .dayIntroduced__item .dayIntroduced__list__item .solar_term {
+.dayIntroduced__bottom .dayIntroduced__item:first-child .dayIntroduced__list__item .solar_term {
   margin-right: 1rem;
   width: 4rem;
 }

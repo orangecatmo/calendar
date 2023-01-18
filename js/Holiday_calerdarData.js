@@ -514,14 +514,7 @@ let calerdar_theme = {
             top: [{
                     title: "六月の祝日",
                     title_bg: "",
-                    item: [{
-                            key: "6月6日（火） ",
-                            value: "芒種"
-                        },
-                        {
-                            key: "3月21日（水）",
-                            value: "夏至 "
-                        },
+                    item: [
                     ]
                 },
                 {
@@ -1116,14 +1109,7 @@ let calerdar_theme = {
             top: [{
                     title: "十二月の祝日",
                     title_bg: "",
-                    item: [{
-                            key: "12月3日 (木)  ",
-                            value: "文化の日"
-                        },
-                        {
-                            key: "12月23日 (水)",
-                            value: "勤労感謝の日"
-                        },
+                    item: [
                     ]
                 },
                 {

@@ -90,7 +90,7 @@ let calerdar_theme = {
               `
                         },
                         {
-                            key: `温州みかん
+                            key: `温州みかん <br>
               ゆず <br>
               ポンカン
               `
@@ -512,14 +512,14 @@ let calerdar_theme = {
         table_theme: ["#109F9F", "#44A88A", "#6CAE72", "#8FB74E", "#A5BE2A", "#A5BE2A"],
         month_info: {
             top: [{
-                    title: "六月の祝日",
+                    title: "六月の節気",
                     title_bg: "./img/花6.png",
                     item: [{
                             key: "6月6日（火） ",
                             value: "芒種"
                         },
                         {
-                            key: "3月21日（水）",
+                            key: "6月21日（水）",
                             value: "夏至 "
                         },
                     ]
